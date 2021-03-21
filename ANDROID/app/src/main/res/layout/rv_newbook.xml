@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+   <RelativeLayout
+       android:id="@+id/mbuku"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:paddingLeft="10dp">
+
+           <ImageView
+               android:id="@+id/gambar1"
+               android:layout_width="100dp"
+               android:layout_height="150dp"
+               app:srcCompat="@drawable/_786024832933_nonversation__w600_hauto" />
+
+           <TextView
+               android:id="@+id/judul1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Nonversation"
+               android:textColor="@color/font_color" />
+
+           <TextView
+               android:id="@+id/kategori1"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Novel book"
+               android:textColor="@color/font_color"
+               android:textSize="10sp" />
+
+       </LinearLayout>
+   </RelativeLayout>
+
+</layout>

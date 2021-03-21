@@ -1,0 +1,12 @@
+{
+  "name": "perpustakawan",
+  "version": "1.0.0",
+  "description": "Aplikasi Perpustakaan Android",
+  "main": "index.js",
+  "author": "Muhammad Fatur",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "dkaframework": "^1.0.19"
+  }
+}
