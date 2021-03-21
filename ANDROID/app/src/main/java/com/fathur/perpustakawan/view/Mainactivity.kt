@@ -1,23 +1,21 @@
-package com.yusuf.perpustakawan.view
+package com.fathur.perpustakawan.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.get
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
+import com.fathur.perpustakawan.Application.Companion.AUTH_STATE
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.yusuf.perpustakawan.R
-import com.yusuf.perpustakawan.databinding.IcBerandaScreenBinding
-import com.yusuf.perpustakawan.recyclerview.NewBookRecyclerview
+import com.fathur.perpustakawan.R
+import com.fathur.perpustakawan.api.SessionKeys
+import com.fathur.perpustakawan.databinding.IcBerandaScreenBinding
+import com.fathur.perpustakawan.recyclerview.NewBookRecyclerview
+import hundredthirtythree.sessionmanager.SessionManager
 
 class Mainactivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemSelectedListener {
 
@@ -36,6 +34,9 @@ class Mainactivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.ic_beranda_screen)
+
+        //######################################################################################
+
 
         mData.clear()
 
@@ -111,8 +112,16 @@ class Mainactivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
                 return false
             }
             R.id.makun -> {
-                i = Intent(this, akunActivity::class.java)
-                startActivity(i)
+                /** Melakukan Pengecekan Apakah User Sudah Login Atau Belum **/
+                if (SessionManager.getBoolean(AUTH_STATE, false)){
+                    i = Intent(this, akunActivity::class.java)
+                    startActivity(i)
+                }else{
+                    i = Intent(this, LoginActivity::class.java)
+                    startActivity(i)
+
+                }
+
                 return false
             }
             else ->{

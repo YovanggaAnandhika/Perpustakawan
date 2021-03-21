@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">PerpustaKawan</string>
     <string name="inside_out_back_again"><![CDATA[Inside Out & Back Again]]></string>
+
+    <string-array name="mCategoryBuku">
+        <item> Jurnal Ilmiah</item>
+        <item> E book</item>
+        <item> Study Book</item>
+        <item> Skripsi</item>
+    </string-array>
 </resources>

@@ -1,4 +1,4 @@
-package com.yusuf.perpustakawan.recyclerview
+package com.fathur.perpustakawan.recyclerview
 
 import android.content.Context
 import android.content.Intent
@@ -9,9 +9,9 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.yusuf.perpustakawan.R
-import com.yusuf.perpustakawan.databinding.RvListbookBinding
-import com.yusuf.perpustakawan.view.detailBook
+import com.fathur.perpustakawan.R
+import com.fathur.perpustakawan.databinding.RvListbookBinding
+import com.fathur.perpustakawan.view.detailBook
 
 class ListBookRecyclerview(var context: Context) : RecyclerView.Adapter<ListBookRecyclerview.MyHolder>() {
 

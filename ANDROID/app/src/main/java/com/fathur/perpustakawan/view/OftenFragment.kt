@@ -1,17 +1,15 @@
-package com.yusuf.perpustakawan.view
+package com.fathur.perpustakawan.view
 
 import android.os.Bundle
-import android.text.method.TextKeyListener.clear
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.yusuf.perpustakawan.R
-import com.yusuf.perpustakawan.databinding.IcBerandaFragmentOftenBinding
-import com.yusuf.perpustakawan.recyclerview.fragmenRecyclerview
+import com.fathur.perpustakawan.R
+import com.fathur.perpustakawan.databinding.IcBerandaFragmentOftenBinding
+import com.fathur.perpustakawan.recyclerview.fragmenRecyclerview
 
 class OftenFragment(private var mText : String) : Fragment() {
 
@@ -21,6 +19,7 @@ class OftenFragment(private var mText : String) : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         super.onCreateView(inflater, container, savedInstanceState)
+
         mBinding = DataBindingUtil.inflate(inflater, R.layout.ic_beranda_fragment_often, container, false)
 
         data.clear()

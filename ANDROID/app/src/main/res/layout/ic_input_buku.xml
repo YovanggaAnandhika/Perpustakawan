@@ -214,6 +214,7 @@
                 android:paddingRight="15dp"
                 android:paddingBottom="5dp"
                 android:text="Input"
+                android:textColor="@color/white"
                 android:textSize="14sp" />
 
         </LinearLayout>

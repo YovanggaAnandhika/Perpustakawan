@@ -26,7 +26,8 @@ const Controller = async(app, opts, next) => {
             })
         });
 
-    })
+    });
+
     await next();
 };
 

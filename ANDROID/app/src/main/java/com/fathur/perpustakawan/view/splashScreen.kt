@@ -1,12 +1,12 @@
-package com.yusuf.perpustakawan.view
+package com.fathur.perpustakawan.view
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.yusuf.perpustakawan.R
-import com.yusuf.perpustakawan.databinding.IcSplashScreenBinding
+import com.fathur.perpustakawan.R
+import com.fathur.perpustakawan.databinding.IcSplashScreenBinding
 
 class splashScreen : AppCompatActivity(){
 

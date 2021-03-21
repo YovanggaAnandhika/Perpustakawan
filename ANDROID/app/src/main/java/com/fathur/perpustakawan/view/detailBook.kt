@@ -1,13 +1,12 @@
-package com.yusuf.perpustakawan.view
+package com.fathur.perpustakawan.view
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
-import com.yusuf.perpustakawan.R
-import com.yusuf.perpustakawan.databinding.IcDetailBookBinding
+import com.fathur.perpustakawan.R
+import com.fathur.perpustakawan.databinding.IcDetailBookBinding
 
 class detailBook:AppCompatActivity() {
 
@@ -16,8 +15,6 @@ class detailBook:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mbinding = DataBindingUtil.setContentView(this, R.layout.ic_detail_book)
-
-
         Glide.with(this)
                 .load(intent.getStringExtra("gambar"))
                 .centerCrop()
