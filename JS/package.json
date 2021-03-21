@@ -2,11 +2,21 @@
   "name": "perpustakawan",
   "version": "1.0.0",
   "description": "Aplikasi Perpustakaan Android",
-  "main": "index.js",
+  "main": "app.js",
   "author": "Muhammad Fatur",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "nodemon --exec babel-node app.js"
+  },
   "dependencies": {
     "dkaframework": "^1.0.19"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "nodemon": "^2.0.7"
   }
 }

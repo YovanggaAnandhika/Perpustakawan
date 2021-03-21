@@ -1,4 +1,6 @@
 const DKA = require("dkaframework");
+import path from "path";
+const Controller = require("./Controller");
 
 new DKA.Server({
     serverEnabled: true,
@@ -7,14 +9,7 @@ new DKA.Server({
     serverView: DKA.Server.VIEW_POV_EJS,
     serverHost: "localhost",
     serverPort: 8089,
-    app: (app, opts, next) => {
-
-        app.get("/login", (request, response) => {
-            response.send("test");
-        })
-
-        next();
-    },
+    app: Controller,
     options: {
         layoutDir: path.join(__dirname, "Layout"),
         assetsDir: path.join(__dirname, "Assets")

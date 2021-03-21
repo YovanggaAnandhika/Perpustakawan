@@ -1,2 +1,3 @@
 # Project exclude paths
 /JS/node_modules/
+/.idea/
