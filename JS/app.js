@@ -5,7 +5,7 @@ const Controller = require("./Controller");
 new DKA.Server({
     serverEnabled: true,
     serverEngine: DKA.Server.FASTIFY_CORE_ENGINE,
-    serverState: DKA.Server.SERVER_STATE_DEVELOPMENT,
+    serverState: DKA.Server.SERVER_STATE_PRODUCTION ,
     serverView: DKA.Server.VIEW_POV_EJS,
     serverHost: "localhost",
     serverPort: 8089,

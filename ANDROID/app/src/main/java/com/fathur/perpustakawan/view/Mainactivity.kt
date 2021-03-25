@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.fathur.perpustakawan.Application
 import com.fathur.perpustakawan.Application.Companion.AUTH_STATE
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.fathur.perpustakawan.R

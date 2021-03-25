@@ -8,9 +8,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import com.fathur.perpustakawan.Application
 import com.fathur.perpustakawan.R
 import com.fathur.perpustakawan.api.Connector
 import com.fathur.perpustakawan.databinding.IcLoginBinding
+import hundredthirtythree.sessionmanager.SessionManager
 
 class LoginActivity : AppCompatActivity() {
 
@@ -19,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.ic_login)
+
 
         mBinding.mSubmit.setOnClickListener {
             Connector(this).Auth(mBinding.mUsername.text.toString(), mBinding.mPassword.text.toString())
